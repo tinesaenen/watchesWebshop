@@ -70,22 +70,32 @@ header {
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px; }
+  grid-gap: 90px; }
 
 .watch-container {
-  border: 2px solid blue; }
+  border: 2px solid blue;
+  padding: 35px 0px 10px 0px;
+  border-radius: 20px;
+  background: #e1e7f0; }
 
 .img-watch {
-  width: 100px; }
+  width: 100%;
+  mix-blend-mode: darken; }
 
 .watch-name {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #242657; }
 
 .watch-price {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  color: #242657; }

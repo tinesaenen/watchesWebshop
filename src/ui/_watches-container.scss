@@ -7,25 +7,33 @@
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 90px;
 }
 
 .watch-container {
   border: 2px solid blue;
-  // width: fit-content;
-  // margin: 20px;
+  padding: 35px 0px 10px 0px;
+  border-radius: 20px;
+  background: $lightBlue;
 }
 
 .img-watch {
-  width: 100px;
+  width: 100%;
+  mix-blend-mode: darken;
 }
 
 .watch-name {
   display: flex;
   justify-content: center;
+  font-family: $main-font;
+  font-size: $watch-name-font-size;
+  color: #242657;
 }
 
 .watch-price {
   display: flex;
   justify-content: center;
+  font-family: $main-font;
+  font-size: $watch-prize-font-size;
+  color: #242657;
 }
