@@ -2,10 +2,18 @@
 
 header {
   background: $lightBlue;
+  padding: $headerPadding;
 }
 
 .headerButton {
   color: $darkBlue;
   font-size: $headerButtonTextSize;
   text-transform: uppercase;
+  margin: 0px 20px 0px 0px;
+  border: none;
+  background-color: $lightBlue;
 }
+
+// .headerButton:focus {
+//   outline: 0;
+// }
