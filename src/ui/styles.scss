@@ -1,31 +1,9 @@
-@import './vars';
+@import "./vars";
 
-.header {
-	background: $background-color;
-	border-bottom: 1px solid $border-color;
-	color: $text-color;
-	font: 16px $font-family;
-	height: $header-height;
-	padding: $padding-small;
+// @import url(//db.onlinewebfonts.com/c/4724e6235ecb66e8330a90b545236592?family=Interstate);
 
-	.logo {
-		background: url(../images/logo.svg) no-repeat center center/contain;
-		height: $header-height - (2*$padding-small);
-		width: 100px;
-	}
+// @import url(//db.onlinewebfonts.com/c/076a573a702ec65cfb1f69588b89f12a?family=InterstateBold);
 
-	nav {
-		height: $header-height - (2*$padding-small);
-	}
-}
+// @import url(//db.onlinewebfonts.com/c/5d7571268a2cc4dcdd56140df04d77d0?family=InterstateLight);
 
-.header--large {
-	@extend .header;
-
-	padding: $padding-large;
-}
-
-img {
-	display: block;
-	width: 300px;
-}
+// @import "personalInfo";

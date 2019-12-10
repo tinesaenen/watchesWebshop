@@ -1,0 +1,17 @@
+.me {
+  margin: $marginTopTripple;
+}
+
+@media (min-width: 748px) {
+  .personalInfo {
+    display: flex;
+    flex-flow: row;
+  }
+  .me {
+    width: 50%;
+  }
+
+  .persoonlijkeInfo {
+    width: 50%;
+  }
+}
