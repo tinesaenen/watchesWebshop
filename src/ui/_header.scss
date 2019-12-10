@@ -1,6 +1,11 @@
 @import "./vars";
 
+header {
+  background: $lightBlue;
+}
+
 .headerButton {
-  color: #242657;
+  color: $darkBlue;
   font-size: $headerButtonTextSize;
+  text-transform: uppercase;
 }

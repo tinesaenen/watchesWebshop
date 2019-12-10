@@ -1,3 +1,10 @@
+body {
+  margin: 0px; }
+
+header {
+  background: #e1e7f0; }
+
 .headerButton {
   color: #242657;
-  font-size: 20px; }
+  font-size: 20px;
+  text-transform: uppercase; }
