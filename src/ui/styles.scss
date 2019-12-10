@@ -1,0 +1,31 @@
+@import './vars';
+
+.header {
+	background: $background-color;
+	border-bottom: 1px solid $border-color;
+	color: $text-color;
+	font: 16px $font-family;
+	height: $header-height;
+	padding: $padding-small;
+
+	.logo {
+		background: url(../images/logo.svg) no-repeat center center/contain;
+		height: $header-height - (2*$padding-small);
+		width: 100px;
+	}
+
+	nav {
+		height: $header-height - (2*$padding-small);
+	}
+}
+
+.header--large {
+	@extend .header;
+
+	padding: $padding-large;
+}
+
+img {
+	display: block;
+	width: 300px;
+}
