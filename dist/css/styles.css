@@ -3,7 +3,10 @@ body {
 
 header {
   background: #e1e7f0;
-  padding: 30px 150px 30px 150px; }
+  padding: 20px 150px 20px 150px; }
+
+.logo {
+  margin: 0px 40px 0px 0px; }
 
 .headerButton {
   color: #242657;
@@ -12,3 +15,19 @@ header {
   margin: 0px 20px 0px 0px;
   border: none;
   background-color: #e1e7f0; }
+
+.pop-up {
+  background: #516076;
+  margin: 0px;
+  height: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center; }
+
+.pop-up-text {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center; }
