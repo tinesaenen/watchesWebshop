@@ -1,4 +1,5 @@
 @import "./vars";
+@import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
 
 .pop-up {
   background: $grey;
@@ -13,4 +14,15 @@
   color: $white;
   font-size: 14px;
   text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+
+.span-underlined {
+  text-decoration: underline;
+  text-decoration-color: $white;
+}
+
+.span-underlined:hover {
+  color: $lightBlue;
+  text-decoration-color: $lightBlue;
 }

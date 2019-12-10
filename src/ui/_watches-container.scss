@@ -1,0 +1,31 @@
+@import "./vars";
+@import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
+
+.watches-container {
+  border: 2px solid yellow;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.watch-container {
+  border: 2px solid blue;
+  // width: fit-content;
+  // margin: 20px;
+}
+
+.img-watch {
+  width: 100px;
+}
+
+.watch-name {
+  display: flex;
+  justify-content: center;
+}
+
+.watch-price {
+  display: flex;
+  justify-content: center;
+}
