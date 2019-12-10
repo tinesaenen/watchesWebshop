@@ -15,11 +15,12 @@
   padding: 35px 0px 10px 0px;
   border-radius: 20px;
   background: $lightBlue;
-  filter: drop-shadow(10px 10px 10px $shadowBlue);
+  filter: drop-shadow(10px 10px 12px $shadowBlue);
+  // box-shadow: inset 0 0 5px $shadowBlue;
 }
 
 .watch-container-extra-filter {
-  filter: drop-shadow(-10px -10px 10px $white);
+  filter: drop-shadow(-10px -10px 12px $white);
 }
 
 .img-watch {

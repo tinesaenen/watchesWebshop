@@ -77,12 +77,12 @@ header {
   padding: 35px 0px 10px 0px;
   border-radius: 20px;
   background: #e1e7f0;
-  -webkit-filter: drop-shadow(10px 10px 10px rgba(55, 84, 170, 0.171));
-          filter: drop-shadow(10px 10px 10px rgba(55, 84, 170, 0.171)); }
+  -webkit-filter: drop-shadow(10px 10px 12px rgba(55, 84, 170, 0.171));
+          filter: drop-shadow(10px 10px 12px rgba(55, 84, 170, 0.171)); }
 
 .watch-container-extra-filter {
-  -webkit-filter: drop-shadow(-10px -10px 10px #ffffff);
-          filter: drop-shadow(-10px -10px 10px #ffffff); }
+  -webkit-filter: drop-shadow(-10px -10px 12px #ffffff);
+          filter: drop-shadow(-10px -10px 12px #ffffff); }
 
 .img-watch {
   width: 100%;
