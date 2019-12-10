@@ -70,17 +70,24 @@ header {
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 90px; }
+  grid-gap: 90px;
+  padding: 20px; }
 
 .watch-container {
-  border: 2px solid blue;
   padding: 35px 0px 10px 0px;
   border-radius: 20px;
-  background: #e1e7f0; }
+  background: #e1e7f0;
+  -webkit-filter: drop-shadow(10px 10px 10px rgba(55, 84, 170, 0.171));
+          filter: drop-shadow(10px 10px 10px rgba(55, 84, 170, 0.171)); }
+
+.watch-container-extra-filter {
+  -webkit-filter: drop-shadow(-10px -10px 10px #ffffff);
+          filter: drop-shadow(-10px -10px 10px #ffffff); }
 
 .img-watch {
   width: 100%;
-  mix-blend-mode: darken; }
+  mix-blend-mode: darken;
+  border: none; }
 
 .watch-name {
   display: -webkit-box;
