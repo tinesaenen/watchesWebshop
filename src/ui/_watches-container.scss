@@ -29,6 +29,16 @@
   border: none;
 }
 
+.watch-properties-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.watch-properties-container {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
 .watch-name {
   display: flex;
   justify-content: center;
@@ -43,4 +53,24 @@
   font-family: $main-font;
   font-size: $watch-prize-font-size;
   color: #242657;
+}
+
+.add-to-cart-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: $lightBlue;
+  filter: drop-shadow(6px 6px 5px $shadowBlue);
+  //alignment in grid zie extra filter class .add-to-cart-button-extra-filter
+}
+
+.add-to-cart-button-extra-filter {
+  filter: drop-shadow(-6px -6px 5px $white);
+  grid-column-start: 3;
+  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
 }

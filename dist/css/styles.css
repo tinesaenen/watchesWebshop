@@ -89,13 +89,21 @@ header {
   mix-blend-mode: darken;
   border: none; }
 
+.watch-properties-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.watch-properties-container {
+  grid-column-start: 2;
+  grid-column-end: 2; }
+
 .watch-name {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
   font-family: "Barlow", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #242657; }
 
 .watch-price {
@@ -104,5 +112,26 @@ header {
   -webkit-box-pack: center;
           justify-content: center;
   font-family: "Barlow", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #242657; }
+
+.add-to-cart-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: #e1e7f0;
+  -webkit-filter: drop-shadow(6px 6px 5px rgba(55, 84, 170, 0.171));
+          filter: drop-shadow(6px 6px 5px rgba(55, 84, 170, 0.171)); }
+
+.add-to-cart-button-extra-filter {
+  -webkit-filter: drop-shadow(-6px -6px 5px #ffffff);
+          filter: drop-shadow(-6px -6px 5px #ffffff);
+  grid-column-start: 3;
+  grid-column-end: 3;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  justify-self: center;
+  align-self: center; }
