@@ -44,7 +44,7 @@
   justify-content: center;
   font-family: $main-font;
   font-size: $watch-name-font-size;
-  color: #242657;
+  color: $darkBlue;
 }
 
 .watch-price {
@@ -52,7 +52,7 @@
   justify-content: center;
   font-family: $main-font;
   font-size: $watch-prize-font-size;
-  color: #242657;
+  color: $darkBlue;
 }
 
 .add-to-cart-button {
@@ -73,4 +73,8 @@
   align-items: center;
   justify-self: center;
   align-self: center;
+}
+
+.shopping-cart-icon {
+  mix-blend-mode: darken;
 }

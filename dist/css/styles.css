@@ -25,7 +25,7 @@ header {
 
 .headerButton {
   color: #242657;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 0px 20px 0px 0px;
   border: none;
@@ -62,7 +62,46 @@ header {
 .filters-container {
   border: 2px solid red;
   width: 20%;
-  height: auto; }
+  height: auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+.checkbox-and-label {
+  margin: 4px 0px 0px 0px; }
+
+.styled-checkbox {
+  position: absolute;
+  opacity: 0; }
+  .styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px; }
+  .styled-checkbox + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #516076;
+    border-radius: 3px;
+    -webkit-filter: drop-shadow(3px 3px 2px rgba(55, 84, 170, 0.171));
+            filter: drop-shadow(3px 3px 2px rgba(55, 84, 170, 0.171)); }
+  .styled-checkbox:hover + label:before {
+    border: 2px solid #2e73d9; }
+  .styled-checkbox:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    background: #516076;
+    width: 9px;
+    height: 9px; }
 
 .watches-container {
   border: 2px solid yellow;
@@ -135,3 +174,6 @@ header {
           align-items: center;
   justify-self: center;
   align-self: center; }
+
+.shopping-cart-icon {
+  mix-blend-mode: darken; }
