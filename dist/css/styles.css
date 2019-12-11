@@ -162,9 +162,13 @@ header {
   -webkit-filter: drop-shadow(6px 6px 5px rgba(55, 84, 170, 0.171));
           filter: drop-shadow(6px 6px 5px rgba(55, 84, 170, 0.171)); }
   .add-to-cart-button img {
-    mix-blend-mode: darken; }
-  .add-to-cart-button img:hover {
-    -webkit-animation: pulse 0.5s ease infinite alternate; }
+    mix-blend-mode: darken;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: translate(-2px, 1px);
+            transform: translate(-2px, 1px); }
+    .add-to-cart-button img:hover {
+      -webkit-animation: rideBy 0.5s ease infinite alternate; }
   .add-to-cart-button:hover {
     -webkit-filter: drop-shadow(6px 6px 5px #ffffff);
             filter: drop-shadow(6px 6px 5px #ffffff);
@@ -187,13 +191,16 @@ header {
     -webkit-filter: drop-shadow(-6px -6px 5px rgba(55, 84, 170, 0.171));
             filter: drop-shadow(-6px -6px 5px rgba(55, 84, 170, 0.171)); }
 
-@-webkit-keyframes pulse {
-  from {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1); }
-  to {
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2); } }
+@-webkit-keyframes rideBy {
+  0% {
+    -webkit-transform: translate(-2px, 1px);
+            transform: translate(-2px, 1px); }
+  50% {
+    -webkit-transform: translate(2px, 1px);
+            transform: translate(2px, 1px); }
+  100% {
+    -webkit-transform: translate(-4px, 1px);
+            transform: translate(-4px, 1px); } }
 
 @-webkit-keyframes hoveringWatchBlueShadow {
   from {
