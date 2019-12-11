@@ -12,7 +12,7 @@ main {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  margin: 0px 150px; }
+  margin: 40px 150px 0px 150px; }
 
 header {
   background: #e1e7f0;
@@ -104,7 +104,6 @@ header {
     height: 9px; }
 
 .watches-container {
-  border: 2px solid yellow;
   width: 80%;
   height: auto;
   display: grid;
@@ -162,6 +161,16 @@ header {
   background-color: #e1e7f0;
   -webkit-filter: drop-shadow(6px 6px 5px rgba(55, 84, 170, 0.171));
           filter: drop-shadow(6px 6px 5px rgba(55, 84, 170, 0.171)); }
+  .add-to-cart-button img {
+    mix-blend-mode: darken; }
+  .add-to-cart-button img:hover {
+    -webkit-animation: pulse 0.5s ease infinite alternate; }
+  .add-to-cart-button:hover {
+    -webkit-filter: drop-shadow(6px 6px 5px #ffffff);
+            filter: drop-shadow(6px 6px 5px #ffffff);
+    background-color: #d6dde7; }
+  .add-to-cart-button:focus {
+    outline: 0; }
 
 .add-to-cart-button-extra-filter {
   -webkit-filter: drop-shadow(-6px -6px 5px #ffffff);
@@ -174,6 +183,30 @@ header {
           align-items: center;
   justify-self: center;
   align-self: center; }
+  .add-to-cart-button-extra-filter:hover {
+    -webkit-filter: drop-shadow(-6px -6px 5px rgba(55, 84, 170, 0.171));
+            filter: drop-shadow(-6px -6px 5px rgba(55, 84, 170, 0.171)); }
 
-.shopping-cart-icon {
-  mix-blend-mode: darken; }
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  to {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2); } }
+
+@-webkit-keyframes hoveringWatchBlueShadow {
+  from {
+    -webkit-filter: drop-shadow(10px 10px 12px rgba(55, 84, 170, 0.171));
+            filter: drop-shadow(10px 10px 12px rgba(55, 84, 170, 0.171)); }
+  to {
+    -webkit-filter: drop-shadow(10px 10px 12px rgba(134, 18, 18, 0));
+            filter: drop-shadow(10px 10px 12px rgba(134, 18, 18, 0)); } }
+
+@-webkit-keyframes hoveringWatchWhiteShadow {
+  from {
+    -webkit-filter: drop-shadow(-10px -10px 12px #ffffff);
+            filter: drop-shadow(-10px -10px 12px #ffffff); }
+  to {
+    -webkit-filter: drop-shadow(-10px -10px 12px rgba(134, 18, 18, 0));
+            filter: drop-shadow(-10px -10px 12px rgba(134, 18, 18, 0)); } }

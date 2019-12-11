@@ -46,10 +46,10 @@
     border: 2px solid $accentBlue;
   }
 
-  // Checked box
-  &:checked + label:before {
-    // background: $lightBlue;
-  }
+  // // Checked box
+  // &:checked + label:before {
+  //   // background: $lightBlue;
+  // }
 
   // V
   &:checked + label:after {

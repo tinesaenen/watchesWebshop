@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
 
 .watches-container {
-  border: 2px solid yellow;
+  // border: 2px solid yellow;
   width: 80%;
   height: auto;
   display: grid;
@@ -16,11 +16,18 @@
   border-radius: 20px;
   background: $lightBlue;
   filter: drop-shadow(10px 10px 12px $shadowBlue);
-  // box-shadow: inset 0 0 5px $shadowBlue;
+
+  &:hover {
+    // -webkit-animation: hoveringWatchBlueShadow 1s infinite ease alternate;
+  }
 }
 
 .watch-container-extra-filter {
   filter: drop-shadow(-10px -10px 12px $white);
+
+  &:hover {
+    // -webkit-animation: hoveringWatchWhiteShadow 1s infinite ease alternate;
+  }
 }
 
 .img-watch {
@@ -63,6 +70,23 @@
   background-color: $lightBlue;
   filter: drop-shadow(6px 6px 5px $shadowBlue);
   //alignment in grid zie extra filter class .add-to-cart-button-extra-filter
+
+  & img {
+    mix-blend-mode: darken;
+  }
+
+  & img:hover {
+    -webkit-animation: pulse 0.5s ease infinite alternate;
+  }
+
+  &:hover {
+    filter: drop-shadow(6px 6px 5px $white);
+    background-color: $lightBlueSlightlyDarker;
+  }
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 .add-to-cart-button-extra-filter {
@@ -73,8 +97,37 @@
   align-items: center;
   justify-self: center;
   align-self: center;
+
+  &:hover {
+    filter: drop-shadow(-6px -6px 5px $shadowBlue);
+  }
 }
 
-.shopping-cart-icon {
-  mix-blend-mode: darken;
+//animations
+
+@-webkit-keyframes pulse {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+@-webkit-keyframes hoveringWatchBlueShadow {
+  from {
+    filter: drop-shadow(10px 10px 12px $shadowBlue);
+  }
+  to {
+    filter: drop-shadow(10px 10px 12px rgba(134, 18, 18, 0));
+  }
+}
+
+@-webkit-keyframes hoveringWatchWhiteShadow {
+  from {
+    filter: drop-shadow(-10px -10px 12px $white);
+  }
+  to {
+    filter: drop-shadow(-10px -10px 12px rgba(134, 18, 18, 0));
+  }
 }
