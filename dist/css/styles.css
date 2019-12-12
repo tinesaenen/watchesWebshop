@@ -60,14 +60,14 @@ header {
           text-decoration-color: #e1e7f0; }
 
 .filters-container {
-  border: 2px solid red;
   width: 20%;
   height: auto;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-top: 20px; }
 
 .checkbox-and-label {
   margin: 4px 0px 0px 0px; }
@@ -122,6 +122,21 @@ header {
   -webkit-filter: drop-shadow(-10px -10px 12px #ffffff);
           filter: drop-shadow(-10px -10px 12px #ffffff); }
 
+.label-new-watch {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 900;
+  margin-top: -20px;
+  margin-left: 80%; }
+  .label-new-watch h1 {
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    color: #242657;
+    padding: 0px;
+    margin: 0px; }
+
 .img-watch {
   width: 100%;
   mix-blend-mode: darken;
@@ -152,6 +167,14 @@ header {
   font-family: "Barlow", sans-serif;
   font-size: 16px;
   color: #242657; }
+
+.on-sale-line-trough {
+  text-decoration: line-through;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
+  margin-right: 10px; }
 
 .add-to-cart-button {
   width: 45px;

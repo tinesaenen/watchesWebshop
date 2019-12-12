@@ -30,6 +30,28 @@
   }
 }
 
+.label-new-watch {
+  background-color: $white;
+  padding: 15px;
+  border-radius: 30px;
+  position: absolute;
+  // transform-origin: 50% 50%;
+  z-index: 900;
+  margin-top: -20px;
+  margin-left: 80%;
+  // display: inline-block;
+  // float: right;
+  // left: 100%;
+  // justify-content: right;
+  h1 {
+    font-family: $main-font;
+    font-size: $watch-name-font-size;
+    color: $darkBlue;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
 .img-watch {
   width: 100%;
   mix-blend-mode: darken;
@@ -60,6 +82,13 @@
   font-family: $main-font;
   font-size: $watch-prize-font-size;
   color: $darkBlue;
+}
+
+.on-sale-line-trough {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  margin-right: 10px;
 }
 
 .add-to-cart-button {

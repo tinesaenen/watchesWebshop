@@ -1,11 +1,3 @@
-//all jQuery
-
-$(function() {
-  $(".headerButton").click(function() {
-    $(".logo").hide("fast");
-  });
-});
-
 /*!
  * jQuery JavaScript Library v3.0.0
  * https://jquery.com/
