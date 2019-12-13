@@ -18,7 +18,19 @@ header {
   background: #e1e7f0;
   padding: 20px 150px 20px 150px;
   -webkit-filter: drop-shadow(0px 5px 10px rgba(55, 84, 170, 0.171));
-          filter: drop-shadow(0px 5px 10px rgba(55, 84, 170, 0.171)); }
+          filter: drop-shadow(0px 5px 10px rgba(55, 84, 170, 0.171));
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+
+.logo-plus-navigator-tabs {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
 
 .logo {
   margin: 0px 40px 0px 0px; }
@@ -31,6 +43,68 @@ header {
   border: none;
   background-color: #e1e7f0;
   font-family: "Barlow", sans-serif; }
+
+.my-shopping-cart-header {
+  mix-blend-mode: darken; }
+
+.searchContainer {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+          flex: 1 1 300px;
+  position: relative;
+  border: 1px solid #516076;
+  border-radius: 10px;
+  overflow: hidden; }
+  .searchContainer .searchBox {
+    border: 0;
+    padding: 5px;
+    -webkit-box-flex: 1;
+            flex: 1;
+    background-color: #e1e7f0;
+    outline: none;
+    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    color: #242657; }
+  .searchContainer .searchButton {
+    background: #516076;
+    border: 0;
+    color: #e1e7f0;
+    padding: 5px;
+    font-size: 14px;
+    font-family: "Barlow", sans-serif;
+    outline: none; }
+    .searchContainer .searchButton:hover {
+      background: #ffffff;
+      color: #516076; }
+    .searchContainer .searchButton:active {
+      background: #2e73d9;
+      color: #ffffff; }
+  .searchContainer .searchBox::-webkit-input-placeholder {
+    color: #242657;
+    font-size: 15px;
+    font-family: "Barlow", sans-serif; }
+  .searchContainer .searchBox::-moz-placeholder {
+    color: #242657;
+    font-size: 15px;
+    font-family: "Barlow", sans-serif; }
+  .searchContainer .searchBox:-ms-input-placeholder {
+    color: #242657;
+    font-size: 15px;
+    font-family: "Barlow", sans-serif; }
+  .searchContainer .searchBox::-ms-input-placeholder {
+    color: #242657;
+    font-size: 15px;
+    font-family: "Barlow", sans-serif; }
+  .searchContainer .searchBox::placeholder {
+    color: #242657;
+    font-size: 15px;
+    font-family: "Barlow", sans-serif; }
+  .searchContainer .fa-search {
+    color: #516076;
+    margin: 6px 6px 5px 6px; }
+  .searchContainer:hover {
+    border: 1px solid #ffffff; }
 
 .pop-up {
   background: #516076;

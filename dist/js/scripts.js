@@ -1,4 +1,4 @@
-//all jQuery
+//all jQuery code die ik schreef
 
 $(function() {
   $(".headerButton").click(function() {

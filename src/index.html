@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Swatch</title>
     <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+    <link
+      href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <link href="/css/styles.css" rel="stylesheet" />
-    <!-- <script type="text/javascript">
-      $(function() {
-        $(".headerButton").click(function() {
-          $(".logo").hide("fast");
-        });
-      });
-    </script> -->
   </head>
   <body>
     <div class="pop-up">
@@ -23,18 +22,37 @@
       </h1>
     </div>
     <header>
-      <img
-        src="img/logo-icons/swatch-logo.png"
-        alt="swatch logo"
-        width="200px"
-        class="logo"
-      />
-      <button class="headerButton">For the holidays</button>
-      <button class="headerButton">Collections</button>
-      <button class="headerButton">Flikflak</button>
-      <button class="headerButton">Contact</button>
-      <input type="text" placeholder="Search.." />
-      <img src="img/logo-icons/shopping-cart.png" alt="" width="30px" />
+      <div class="logo-plus-navigator-tabs">
+        <img
+          src="img/logo-icons/swatch-logo.png"
+          alt="swatch logo"
+          width="200px"
+          class="logo"
+        />
+        <button class="headerButton">For the holidays</button>
+        <button class="headerButton">Collections</button>
+        <button class="headerButton">Flikflak</button>
+        <button class="headerButton">Contact</button>
+
+        <div class="searchContainer">
+          <div class="fa fa-search"></div>
+          <input
+            class="searchBox"
+            type="search"
+            name="search"
+            placeholder="Search..."
+          />
+          <input type="submit" value="Search" class="searchButton" />
+        </div>
+      </div>
+      <div class="search-bar-plus-icon">
+        <img
+          class="my-shopping-cart-header"
+          src="img/logo-icons/shopping-cart.png"
+          alt=""
+          width="30px"
+        />
+      </div>
     </header>
     <main>
       <!------------------- filter container ------------------------------>
