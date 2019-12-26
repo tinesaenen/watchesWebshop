@@ -195,7 +195,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 90px;
   padding: 20px;
-  margin: 140px 0px 0px 0px; }
+  margin: 140px 0px 100px 0px; }
 
 .watch-container {
   padding: 35px 0px 10px 0px;
