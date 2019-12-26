@@ -3,12 +3,13 @@
 body {
   margin: 0px;
   background-color: #e1e7f0;
+  overscroll-behavior: none;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  margin: 40px 150px 0px 150px;
+  margin: 0px 150px 0px 150px;
 }
 
 @import "header";
