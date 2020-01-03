@@ -59,86 +59,74 @@
       <!------------------- filter container ------------------------------>
 
       <div class="filters-container">
-        <div class="checkbox-and-label">
-          <input
-            class="styled-checkbox kids-checkbox"
-            id="styled-checkbox-3"
-            type="checkbox"
-            value="value1"
-            checked="checked"
-          />
-          <label for="styled-checkbox-3">Kids</label>
+        <!--gender checkbox women-->
+        <div class="checkbox-and-label" id="gender">
+          <input type="radio" id="women" value="women" name="gender" checked />
+          <label for="styled-checkbox-1"><h2>Women</h2></label>
         </div>
-        <div class="checkbox-and-label">
-          <input
-            class="styled-checkbox women-checkbox"
-            id="styled-checkbox-1"
-            type="checkbox"
-            value="value1"
-            checked="checked"
-          />
-          <label for="styled-checkbox-1">Women</label>
+       <!--gender checkbox men-->
+        <div class="checkbox-and-label" id="gender">
+          <input type="radio" id="men" value="men" name="gender"/>
+          <label for="styled-checkbox-2"><h2>Men</h2></label>
         </div>
-        <div class="checkbox-and-label">
-          <input
-            class="styled-checkbox men-checkbox"
-            id="styled-checkbox-2"
-            type="checkbox"
-            value="value1"
-            checked="checked"
-          />
-          <label for="styled-checkbox-2">Men</label>
-        </div>
+
         <br />
-        <div class="checkbox-and-label">
+        <!--gender checkbox women-->
+
+        <div class="checkbox-and-label" id="property">
           <input
-            class="styled-checkbox leather-checkbox"
-            id="styled-checkbox-4"
+            id="numbers"
             type="checkbox"
-            value="value1"
-            checked="checked"
+            name="property"
           />
-          <label for="styled-checkbox-4">Leather</label>
+          <label for="styled-checkbox-4"><h4>Numbers<h4></label>
         </div>
-        <div class="checkbox-and-label">
+
+        <div class="checkbox-and-label" id="property">
           <input
-            class="styled-checkbox steel-checkbox"
-            id="styled-checkbox-5"
+            id="steel"
             type="checkbox"
-            value="value1"
-            checked="checked"
+            name="property"
           />
-          <label for="styled-checkbox-5">Steel</label>
+          <label for="styled-checkbox-5"><h4>Steel<h4></label>
         </div>
-        <div class="checkbox-and-label">
+
+        <div class="checkbox-and-label" id="property">
           <input
-            class="styled-checkbox numbers-checkbox"
-            id="styled-checkbox-6"
+            id="kids"
             type="checkbox"
-            value="value1"
-            checked="checked"
+            name="property"
           />
-          <label for="styled-checkbox-6">With numbers</label>
+          <label for="styled-checkbox-5"><h4>Kids<h4></label>
         </div>
-        <div class="checkbox-and-label">
+
+        <div class="checkbox-and-label" id="property">
           <input
-            class="styled-checkbox on-sale-checkbox"
-            id="styled-checkbox-7"
+            id="leather"
             type="checkbox"
-            value="value1"
-            checked="checked"
+            name="property"
           />
-          <label for="styled-checkbox-7">On sale</label>
+          <label for="styled-checkbox-5"><h4>Leather<h4></label>
         </div>
-        <div class="checkbox-and-label">
+
+
+        <div class="checkbox-and-label" id="property">
           <input
-            class="styled-checkbox new-checkbox"
-            id="styled-checkbox-8"
+            id="on-sale"
             type="checkbox"
-            value="value1"
-            checked="checked"
+            name="property"
           />
-          <label for="styled-checkbox-8">New</label>
+          <label for="styled-checkbox-5"><h4>On sale<h4></label>
+        </div>
+
+
+        <div class="checkbox-and-label" id="property">
+          <input
+            id="new"
+            type="checkbox"
+            name="property"
+          />
+          <label for="styled-checkbox-5"><h4>New<h4></label>
         </div>
       </div>
 
@@ -146,7 +134,7 @@
       <div class="watches-container">
         <!------------------- Normal watch 1------------------------------>
 
-        <div class="watch-container-extra-filter all kids numbers">
+        <div class="watch-container-extra-filter item women numbers kids">
           <div class="watch-container">
             <img
               class="img-watch"
@@ -173,7 +161,7 @@
         </div>
         <!------------------- Normal watch 1------------------------------>
 
-        <div class="watch-container-extra-filter women">
+        <div class="watch-container-extra-filter item women ">
           <div class="watch-container">
             <img
               class="img-watch"
@@ -200,7 +188,7 @@
         </div>
         <!------------------- Normal watch 3------------------------------>
 
-        <div class="watch-container-extra-filter">
+        <div class="watch-container-extra-filter item men numbers">
           <div class="watch-container">
             <img
               class="img-watch"
@@ -227,7 +215,7 @@
         </div>
         <!------------------- Normal watch 4------------------------------>
 
-        <div class="watch-container-extra-filter women">
+        <div class="watch-container-extra-filter item kids men numbers">
           <div class="watch-container">
             <img
               class="img-watch"
@@ -253,7 +241,7 @@
           </div>
         </div>
         <!------------------- watch on sale 1------------------------------>
-        <div class="watch-container-extra-filter">
+        <div class="watch-container-extra-filter item women on-sale">
           <div class="watch-container">
             <img
               class="img-watch"
@@ -281,7 +269,7 @@
           </div>
         </div>
         <!------------------- watch on sale 2------------------------------>
-        <div class="watch-container-extra-filter">
+        <div class="watch-container-extra-filter item men numbers leather on-sale">
           <div class="watch-container">
             <img
               class="img-watch"
@@ -309,7 +297,7 @@
           </div>
         </div>
         <!------------------- watch on sale 3------------------------------>
-        <div class="watch-container-extra-filter">
+        <div class="watch-container-extra-filter item men numbers leather on-sale">
           <div class="watch-container">
             <img
               class="img-watch"
@@ -337,7 +325,7 @@
           </div>
         </div>
         <!------------------- watch on sale 4------------------------------>
-        <div class="watch-container-extra-filter">
+        <div class="watch-container-extra-filter item women on-sale">
           <div class="watch-container">
             <img
               class="img-watch"
@@ -365,7 +353,7 @@
           </div>
         </div>
         <!------------------- new watch 1------------------------------>
-        <div class="watch-container-extra-filter">
+        <div class="watch-container-extra-filter item women new">
           <div class="label-new-watch">
             <h1>New!</h1>
           </div>
@@ -394,7 +382,7 @@
           </div>
         </div>
         <!------------------- new watch 2------------------------------>
-        <div class="watch-container-extra-filter">
+        <div class="watch-container-extra-filter item women new numbers">
           <div class="label-new-watch">
             <h1>New!</h1>
           </div>
@@ -423,7 +411,7 @@
           </div>
         </div>
         <!------------------- new watch 3------------------------------>
-        <div class="watch-container-extra-filter">
+        <div class="watch-container-extra-filter item women new">
           <div class="label-new-watch">
             <h1>New!</h1>
           </div>
@@ -452,7 +440,7 @@
           </div>
         </div>
         <!------------------- new watch 2------------------------------>
-        <div class="watch-container-extra-filter">
+        <div class="watch-container-extra-filter item women new steel">
           <div class="label-new-watch">
             <h1>New!</h1>
           </div>
@@ -480,6 +468,7 @@
             </div>
           </div>
         </div>
+        
       </div>
     </main>
   </body>
