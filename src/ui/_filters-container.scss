@@ -13,56 +13,66 @@
   top: 150px;
 }
 
+.radioButton-and-label,
 .checkbox-and-label {
   margin: 4px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+h4 {
+  margin: 0px 0px 0px 5px;
+  font-size: $filter-label-name-size;
+  font-family: $main-font;
+  color: $darkBlue;
 }
 
 //custom checkbox
 
-.styled-checkbox {
-  position: absolute; // zodat vinkje er niet voor zorgt dat box opschuift
-  opacity: 0; // verstoppen pre check
+// .styled-checkbox {
+//   position: absolute; // zodat vinkje er niet voor zorgt dat box opschuift
+//   opacity: 0; // verstoppen pre check
 
-  & + label {
-    position: relative;
-    cursor: pointer;
-    padding: 0;
-    font-family: $main-font;
-    font-size: $filter-label-name-size;
-  }
+//   & + label {
+//     position: relative;
+//     cursor: pointer;
+//     padding: 0;
+//     font-family: $main-font;
+//     font-size: $filter-label-name-size;
+//   }
 
-  // Unchecked box
-  & + label:before {
-    content: ""; // content is nu nog leeg, want ongeklikt met witte achtergrond
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: text-top;
-    width: 13px;
-    height: 13px;
-    // background: $lightBlue;
-    border: 2px solid $grey;
-    border-radius: 3px;
-    filter: drop-shadow(3px 3px 2px $shadowBlue);
-  }
+//   // Unchecked box
+//   & + label:before {
+//     content: ""; // content is nu nog leeg, want ongeklikt met witte achtergrond
+//     margin-right: 10px;
+//     display: inline-block;
+//     vertical-align: text-top;
+//     width: 13px;
+//     height: 13px;
+//     // background: $lightBlue;
+//     border: 2px solid $grey;
+//     border-radius: 3px;
+//     filter: drop-shadow(3px 3px 2px $shadowBlue);
+//   }
 
-  // Hover box
-  &:hover + label:before {
-    border: 2px solid $accentBlue;
-  }
+//   // Hover box
+//   &:hover + label:before {
+//     border: 2px solid $accentBlue;
+//   }
 
-  // // Checked box
-  // &:checked + label:before {
-  //   // background: $lightBlue;
-  // }
+//   // // Checked box
+//   // &:checked + label:before {
+//   //   // background: $lightBlue;
+//   // }
 
-  // V
-  &:checked + label:after {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: 4px;
-    background: $grey;
-    width: 9px;
-    height: 9px;
-  }
-}
+//   // V
+//   &:checked + label:after {
+//     content: "";
+//     position: absolute;
+//     left: 4px;
+//     top: 4px;
+//     background: $grey;
+//     width: 9px;
+//     height: 9px;
+//   }
+// }

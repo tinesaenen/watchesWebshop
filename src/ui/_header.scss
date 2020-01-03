@@ -32,13 +32,16 @@ header {
   border: none;
   background-color: $lightBlue;
   font-family: "Barlow", sans-serif;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .my-shopping-cart-header {
   mix-blend-mode: darken;
 }
 
-//search box!!!
+//search box
 
 .searchContainer {
   display: inline-flex;
