@@ -87,7 +87,6 @@ $("#property input").change(function() {
   filter();
 });
 
-// this runs on load so the initial view will be pdated
 genderSelector =
   $("#gender :checked").val() == "men"
     ? ".men:not(.women)"
