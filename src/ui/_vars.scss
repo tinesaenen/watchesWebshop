@@ -25,3 +25,14 @@ $filter-label-name-size: 14px;
 
 // search container
 $search-container-padding: 5px 150px 5px 150px;
+
+//mixins
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
